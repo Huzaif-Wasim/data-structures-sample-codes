@@ -8,10 +8,10 @@
  *
  * @author mdhqureshi
  */
-public class LinkedList<T> {
+class LinkedList<T> {
 
     private int size;
-    public Node<T> head;
+    private Node<T> head;
     private Node<T> tail;
 
     public LinkedList() {
@@ -19,7 +19,7 @@ public class LinkedList<T> {
         head = tail = null;
     }
 
-    public class Node<T> {
+    private class Node<T> {
         T data;
         Node<T> next;
         Node<T> prev;
